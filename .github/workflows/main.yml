@@ -1,7 +1,13 @@
 name: Deploy Node.js project to function app
 
 on:
-  [push]
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
 
 env:
   AZURE_FUNCTIONAPP_NAME: sudoku-back
