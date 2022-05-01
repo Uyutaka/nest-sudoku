@@ -1,4 +1,4 @@
-name: Deploy Node.js project to function app
+name: Deploy Node.js project to function app on p
 
 on:
   push:
